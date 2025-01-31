@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Home</title>
 </head>
 
 <body class="flex flex-col min-h-screen items-center bg-[#c2c5bb]">
+
     <!-- header section -->
     <header class="flex justify-between w-full pt-[20px] pb-[5px] px-[60px] shadow-md shadow-[#5C5C5C]">
         <div>
@@ -18,10 +19,16 @@
             </a>
         </div>
         <nav>
-            <ul class="flex  w-full gap-x-10">
-                <li class="hover:text-[#157a6e]"><a href="#">Gallery</a></li>
-                <li class="hover:text-[#157a6e]"><a href="#">About</a></li>
-                <li class="hover:text-[#157a6e]"><a href="#">Contact us</a></li>
+            <ul class="flex  w-full gap-x-[30px]">
+                <li class="hover:text-[#157a6e]">
+                    <a href="#">Gallery</a>
+                </li>
+                <li class="hover:text-[#157a6e]">
+                    <a href="#">About</a>
+                </li>
+                <li class="hover:text-[#157a6e]">
+                    <a href="#">Contact us</a>
+                </li>
             </ul>
         </nav>
         <button class="rounded-[2px] w-[80px] bg-[#499f68] hover:bg-[#77b28c]">
@@ -31,25 +38,94 @@
     <!-- end of header section -->
 
     <!-- main page content -->
-    <main class="flex-grow border-1 border-solid w-full">
+    <main class="flex-grow w-full py-[30px] justify-center items-center text-center">
 
-        <p>
-            Get stunning images of the cosmos with cosmic
+        <p class="text-xl font-bold">
+            Get stunning images of space from the international space station
         </p>
-        <!-- silde show -->
-        <div class="flex">
 
 
-        </div>
+      <!--   <div class="flex gap-x-[15px] justify-center ">
+            <button class="size-[40px] bg-[#499f68] hover:bg-[#77b28c]">
+                1
+            </button>
+            <button class="size-[40px] bg-[#499f68] hover:bg-[#77b28c]">
+                2
+            </button>
+        </div> -->
+        <!-- silde show for images of the solar system begin-->
+        <section
+            class="m-[auto] my-[50px] p-[25px] rounded-[5px] shadow-md shadow-[#5C5C5C] w-[70%] h-[70%] justify-center">
 
+            <p idclass="text-bold">Solar system</p>
+
+            <div class="slideshow w-[800px] h-[500px] m-[auto] relative">
+                <img class="slide absolute object-cover w-[100%] rounded-[5px] hidden" src="assets/solar_system/sun.jpg"
+                    alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/mercury.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/venus.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/home.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/mars.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/jupiter.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/saturn.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/uranus.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/neptune.jpg" alt="">
+                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/pluto.jpg" alt="">
+
+                <div class="cursor-pointer w-[40px] m-[auto] bg-[#499f68] hover:bg-[#005313] text-white absolute top-1/2 left-[4px]"
+                    onclick="next_slide(-1)">
+                    <p>❮</p>
+                </div>
+
+                <div class="cursor-pointer w-[40px] m-[auto] bg-[#499f68] hover:bg-[#005313] text-white absolute top-1/2 right-[4px]"
+                    onclick="next_slide(1)">
+                    <p>❯</p>
+                </div>
+
+            </div>
+
+            <div class="selector text-center">
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(0)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(1)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(2)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(3)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(4)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(5)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(6)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(7)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(8)"></button>
+                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-[#499f68]"
+                    onclick="current_slide(9)"></button>
+            </div>
+        </section>
+        <!-- silde show for images of the solar system begin-->
     </main>
     <!-- end of main page content  -->
 
-    <footer class="flex w-full bg-black text-center text-white ">
+    <!-- footer beginning -->
+    <footer class="w-full bg-red-500  text-center  py-[10px] items-center">
+        <div class="flex gap-x-[25px] justify-center">
+            <div>
+                <p>Cosmic(style logo later)</p>
+            </div>
+            <div>
+                <p>Socials section goes here</p>
+            </div>
+        </div>
 
         <p class="w-full text-xs">Copyright © 2025 cosmic.com</p>
-
     </footer>
+
+    <script src="scripts/slideshow.js"></script>
 
 </body>
 
