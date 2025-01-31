@@ -26,11 +26,11 @@ function show_slide() {
 
 
     slides.forEach(slide => { slide.classList.add("hidden") });
-    dots.forEach(dot => { dot.classList.remove("bg-[#005313]") });
+    dots.forEach(dot => { dot.classList.remove("bg-red-800") });
 
 
     slides[slide_index].classList.remove("hidden");
-    dots[slide_index].classList.add("bg-[#005313]");
+    dots[slide_index].classList.add("bg-red-800");
 
 
 }
