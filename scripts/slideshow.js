@@ -1,4 +1,5 @@
 let slide_index = 0;
+
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 
@@ -26,11 +27,11 @@ function show_slide() {
 
 
     slides.forEach(slide => { slide.classList.add("hidden") });
-    dots.forEach(dot => { dot.classList.remove("bg-red-800") });
+    dots.forEach(dot => { dot.classList.remove("bg-black") });
 
 
     slides[slide_index].classList.remove("hidden");
-    dots[slide_index].classList.add("bg-red-800");
+    dots[slide_index].classList.add("bg-black");
 
 
 }

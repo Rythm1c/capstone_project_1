@@ -23,7 +23,7 @@
 <body class="flex flex-col min-h-screen items-center bg-[#c2c5bb]">
 
     <!-- header section -->
-    <header class="flex justify-between w-full pt-[20px] pb-[5px] px-[60px] shadow-md shadow-[#5C5C5C]">
+    <header class="flex text-xs justify-between w-full pt-[20px] pb-[5px] px-[60px] shadow-md shadow-[#5C5C5C]">
         <div class="flex">
             <img class="w-[30px]" src="assets/logo2.svg" alt="logo2">
             <img class="w-[100px]" src="assets/logo.png" alt="logo">
@@ -48,39 +48,66 @@
     <!-- end of header section -->
 
     <!-- main page content -->
-    <main class="flex-grow w-full py-[30px] justify-center items-center text-center">
+    <main class="flex-grow w-full flex flex-col text-center">
 
-        <p class="text-[30px] font-bold">
-            Get stunning images of space from the international space station
-        </p>
+        <section class="relative w-full">
+
+            <p class="absolute top-1/2 text-red-500 text-[60px] text-center font-bold">
+                Get stunning images of space from the international space station
+            </p>
+            <img class="w-full h-full" src="assets/front-bg.jpg" alt="front">
+        </section>
 
 
-        <!--   <div class="flex gap-x-[15px] justify-center ">
-            <button class="size-[40px] bg-[#499f68] hover:bg-[#77b28c]">
-                1
-            </button>
-            <button class="size-[40px] bg-[#499f68] hover:bg-[#77b28c]">
-                2
-            </button>
-        </div> -->
-        <!-- silde show for images of the solar system begin-->
         <section
             class="m-[auto] my-[50px] p-[25px] rounded-[5px] shadow-md shadow-[#5C5C5C] w-[70%] h-[70%] justify-center">
 
             <h3 id="SolarSys" class="font-bold text-xl">Solar system</h3>
+            <p class="text-xs pb-[15px]">Some pictures of our neighbouring planets taken by the international
+                space station including our own star</p>
 
-            <div class="slideshow w-[800px] h-[500px] m-[auto] relative">
-                <img class="slide absolute object-cover w-[100%] rounded-[5px] hidden" src="assets/solar_system/sun.jpg"
-                    alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/mercury.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/venus.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/home.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/mars.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/jupiter.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/saturn.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/uranus.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/neptune.jpg" alt="">
-                <img class="slide absolute w-[100%] rounded-[5px] hidden" src="assets/solar_system/pluto.jpg" alt="">
+            <div class="slideshow w-[90%] h-[80%] m-[auto] relative">
+
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/sun.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">The Sun</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/mercury.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Mercury</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/venus.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Venus</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/home.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Earth</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/mars.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Mars</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/jupiter.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Jupiter</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/saturn.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Saturn</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/uranus.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Uranus</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/neptune.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Neptune</p>
+                </div>
+                <div class="slide hidden w-[100%] h-[100%]">
+                    <img class="w-[100%] rounded-[5px]" src="assets/solar_system/pluto.jpg" alt="">
+                    <p class="absolute top-[4px] left-[4px] text-white font-bold">Pluto</p>
+                </div>
 
                 <div class="cursor-pointer w-[40px] m-[auto] bg-red-500 hover:bg-red-800 absolute top-1/2 left-[4px]"
                     onclick="next_slide(-1)">
@@ -95,25 +122,25 @@
             </div>
 
             <div class="selector text-center">
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(0)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(1)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(2)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(3)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(4)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(5)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(6)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(7)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(8)"></button>
-                <button class="dot w-[15px] h-[15px] rounded-[50%] mx-[5px] cursor-pointer bg-red-500"
+                <button class="dot w-[10px] h-[10px] rounded-[50%] mx-[5px] cursor-pointer bg-[#909090]"
                     onclick="current_slide(9)"></button>
             </div>
         </section>
