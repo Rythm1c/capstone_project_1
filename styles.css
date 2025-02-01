@@ -12,5 +12,5 @@ body {
 }
 
 .dropdown:hover .GalleryDropList {
-    display: block;
+    display: visible;
 }
