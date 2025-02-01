@@ -6,3 +6,11 @@
 body {
     font-family: Montserrat;
 }
+
+.GalleryDropList {
+    display: none;
+}
+
+.dropdown:hover .GalleryDropList {
+    display: block;
+}

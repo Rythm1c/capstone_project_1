@@ -23,15 +23,29 @@
 <body class="flex flex-col min-h-screen items-center bg-[#c2c5bb]">
 
     <!-- header section -->
-    <header class="flex text-xs justify-between w-full pt-[20px] pb-[5px] px-[60px] shadow-md shadow-[#5C5C5C]">
+    <header class="flex text-xs justify-between w-full pt-[20px] pb-[5px] px-[60px]">
         <div class="flex">
-            <img class="w-[30px]" src="assets/logo2.svg" alt="logo2">
             <img class="w-[100px]" src="assets/logo.png" alt="logo">
         </div>
         <nav>
             <ul class="flex  w-full gap-x-[30px]">
-                <li class="hover:text-[#157a6e]">
-                    <a href="#">Gallery</a>
+                <li class="dropdown relative">
+                    <a href="#" class="hover:text-[#157a6e]">Gallery</a>
+
+                    <ul class="GalleryDropList absolute w-[100px] bg-[#c2c5bb] shadow-md shadow-[#5C5C5C] z-50">
+                        <li class="hover:bg-[#9A9A9A] p-[5px]">
+                            <a href="#SolarSys"> Solar system</a>
+                        </li>
+                        <hr class="border-black">
+                        <li class="hover:bg-[#9A9A9A] p-[5px]">
+                            <a href="#">Space station</a>
+                        </li>
+                        <hr class="border-black">
+                        <li class="hover:bg-[#9A9A9A] p-[5px]">
+                            <a href="#">Nebulas</a>
+                        </li>
+                    </ul>
+
                 </li>
                 <li class="hover:text-[#157a6e]">
                     <a href="#">About</a>
@@ -152,17 +166,23 @@
     <footer class="w-full bg-red-500  text-center  py-[10px] items-center">
         <div class="flex gap-x-[50px] justify-center">
             <div class="flex">
-                <img class="w-[25px]" src="assets/logo2.svg" alt="logo2">
                 <img class="w-[100px]" src="assets/logo.png" alt="logo">
             </div>
             <div class="flex gap-x-[5px]">
                 <a href="#"> <img class="w-[25px] cursor-pointer" src="assets/instagram.png" alt="insta logo"></a>
                 <a href="#"><img class="w-[25px] cursor-pointer" src="assets/facebook.png" alt="facebook logo"></a>
                 <a href="#"><img class="w-[25px] cursor-pointer" src="assets/twitter.png" alt="x logo"></a>
-
-
             </div>
         </div>
+
+        <div class="flex justify-center">
+            <ul class="flex  gap-x-[20px] mt-[20px]">
+                <li>Help</li>
+                <li>Content</li>
+                <li>Companies</li>
+            </ul>
+        </div>
+
 
         <p class="w-full text-xs mt-[20px]">Copyright © 2025 cosmic.com</p>
     </footer>
