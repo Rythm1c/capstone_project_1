@@ -28,12 +28,13 @@
             <img class="w-[100px]" src="assets/logo.png" alt="logo">
         </div>
         <nav>
-            <ul class="flex  w-full gap-x-[30px]">
-                <li class="dropdown relative">
+            <ul class="flex w-full gap-x-[30px]">
+                <li class="group relative">
                     <a href="#" class="hover:text-[#157a6e]">Gallery</a>
 
-                    <ul
-                        class="GalleryDropList absolute w-[150px] text-center bg-[#c2c5bb] shadow-md shadow-[#5C5C5C] z-50">
+                    <ul class="absolute opacity-0 invisible w-[150px] text-center bg-[#c2c5bb] shadow-md shadow-[#5C5C5C] 
+                            group-hover:opacity-100 group-hover:visible z-50">
+
                         <li class="hover:bg-[#9A9A9A] py-[10px]">
                             <a href="#SolarSys">Solar system</a>
                         </li>
@@ -188,7 +189,7 @@
         <p class="w-full text-xs mt-[20px]">Copyright © 2025 cosmic.com</p>
     </footer>
 
-    <script src="scripts/slideshow.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
