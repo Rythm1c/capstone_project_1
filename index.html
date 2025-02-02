@@ -33,19 +33,20 @@
                     <a href="#" class="hover:text-[#157a6e]">Gallery</a>
 
                     <ul class="absolute opacity-0 invisible w-[150px] text-center bg-[#c2c5bb] shadow-md shadow-[#5C5C5C] 
-                            group-hover:opacity-100 group-hover:visible z-50">
+                            group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
 
                         <li class="hover:bg-[#9A9A9A] py-[10px]">
                             <a href="#SolarSys">Solar system</a>
                         </li>
                         <hr class="border-black mx-[4px]">
                         <li class="hover:bg-[#9A9A9A] py-[10px]">
-                            <a href="#">Space station</a>
+                            <a href="#nebulaSec">Nebulae</a>
                         </li>
                         <hr class="border-black mx-[4px]">
                         <li class="hover:bg-[#9A9A9A] py-[10px]">
-                            <a href="#">Nebulas</a>
+                            <a href="#">Space station</a>
                         </li>
+
                     </ul>
 
                 </li>
@@ -57,6 +58,7 @@
                 </li>
             </ul>
         </nav>
+
         <button class="rounded-[2px] w-[80px] bg-red-500 hover:bg-red-800">
             sign up
         </button>
@@ -76,7 +78,7 @@
 
 
         <section
-            class="m-[auto] my-[50px] p-[25px] rounded-[5px] shadow-md shadow-[#5C5C5C] w-[70%] h-[70%] justify-center">
+            class="m-[auto] my-[50px] p-[25px] rounded-[5px] shadow-md shadow-[#5C5C5C] w-4/5 h-[70%] justify-center">
 
             <h3 id="SolarSys" class="font-bold text-xl">Solar system</h3>
             <p class="text-xs pb-[15px]">Some pictures of our neighbouring planets taken by the international
@@ -125,15 +127,16 @@
                     <p class="absolute top-[4px] left-[4px] text-white font-bold">Pluto</p>
                 </div>
 
-                <div class="cursor-pointer w-[40px] m-[auto] bg-red-500 hover:bg-red-800 absolute top-1/2 left-[4px]"
+                <button class="cursor-pointer w-[40px] m-[auto] bg-red-500 hover:bg-red-800 absolute top-1/2 left-[4px]"
                     onclick="next_slide(-1)">
-                    <p>❮</p>
-                </div>
+                    ❮
+                </button>
 
-                <div class="cursor-pointer w-[40px] m-[auto] bg-red-500 hover:bg-red-800 absolute top-1/2 right-[4px]"
+                <button
+                    class="cursor-pointer w-[40px] m-[auto] bg-red-500 hover:bg-red-800 absolute top-1/2 right-[4px]"
                     onclick="next_slide(1)">
-                    <p>❯</p>
-                </div>
+                    ❯
+                </button>
 
             </div>
 
@@ -160,7 +163,65 @@
                     onclick="current_slide(9)"></button>
             </div>
         </section>
-        <!-- silde show for images of the solar system begin-->
+
+        <section class="m-[auto] my-[10px] w-[80%] h-[600px] overflow-auto shadow-md shadow-[#5C5C5C] justify-center">
+            <h3 id="nebulaSec" class="font-bold text-xl">Nebulae</h3>
+            <p class="text-xs">Some beautiful images captured of nebulas across the universe</p>
+
+            <div class="my-[30px] w-[100%] p-[10px]">
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/ants.jpg" alt="ants nebula">
+                    <p class="text-l font-bold">Ants nebula</p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/cats_eye.jpg" alt="cats eye nebula">
+                    <p class="text-l font-bold">Cats Eye nebula
+                    </p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/cygnus_loop.jpg"
+                        alt="cygnus loop nebula">
+                    <p class="text-l font-bold">Cygnus loop
+                        nebula</p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/dumbbell.jpg" alt="dumbbell nebula">
+                    <p class="text-l font-bold">Dumbbell nebula
+                    </p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/horse_head.jpg"
+                        alt="horse head nebula">
+                    <p class="text-l font-bold">Horse Head
+                        nebula</p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/lagoon.jpg" alt="lagoon nebula">
+                    <p class="text-l font-bold">Lagoon nebula
+                    </p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/NGC_6153.jpg" alt="cats eye nebula">
+                    <p class="text-l font-bold">NGC 6153 nebula
+                    </p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/orion.jpg" alt="cats eye nebula">
+                    <p class="text-l font-bold">Orion nebula</p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/soul.jpg" alt="cats eye nebula">
+                    <p class="text-l font-bold">Soul nebula</p>
+                </div>
+                <div class="w-[100%]">
+                    <img class="w-[60%] m-[auto] rounded-[5px]" src="assets/nebulas/Tarantula.jpg"
+                        alt="cats eye nebula">
+                    <p class="text-l font-bold">Tarantula nebula
+                    </p>
+                </div>
+            </div>
+
+        </section>
     </main>
     <!-- end of main page content  -->
 
